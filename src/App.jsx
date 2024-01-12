@@ -25,7 +25,7 @@ function App() {
   }
 
   return (
-    <div className="w-[360px] h-[100vh] mx-auto flex flex-col border-2 bg-gray-200">
+    <div className="w-[360px] h-[100vh] mx-auto p-5 flex flex-col border-2 bg-gray-200">
       <Router>
         <Routes>
           <Route path="/" element={<Overview />} />

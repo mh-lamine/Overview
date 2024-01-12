@@ -14,9 +14,10 @@ export default function Login( {setIsAuth} ) {
     })}
 
   return (
-    <div>
-      <p>Se connecter avec Google</p>
-      <button onClick={signInWithGoogle}>Connection</button>
+    <div className='w-full h-full flex flex-col items-center justify-center gap-5 text-center'>
+      <p>A venir: connexion avec authentification whitelist + parrainage</p>
+      <span className='opacity-50 text-sm'>en attendant...</span>
+      <button onClick={signInWithGoogle} className='bg-blue-300 p-3 rounded tracking-wide'>Se connecter avec Google</button>
     </div>
   )
 }
