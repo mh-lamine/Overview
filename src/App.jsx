@@ -23,7 +23,7 @@ function App() {
   };
 
   return (
-    <div className="w-[360px] h-[100vh] mx-auto p-5 flex flex-col bg-gray-200">
+    <div className=" w-screen h-screen p-5 flex flex-col bg-gray-200">
       <Router>
         <Routes>
           <Route path="/" element={<Overview />} />
