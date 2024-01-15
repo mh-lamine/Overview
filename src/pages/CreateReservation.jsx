@@ -6,6 +6,7 @@ import { collection, addDoc, Timestamp } from "firebase/firestore";
 export default function CreateReservation() {
   const [title, setTitle] = useState("");
   const [description, setDescription] = useState("");
+  const [date, setDate] = useState("");
 
   const handleSubmit = async (e) => {
     e.preventDefault();
@@ -13,6 +14,7 @@ export default function CreateReservation() {
       await addDoc(collection(db, "appointment"), {
         title: title,
         description: description,
+        Date: date,
         completed: false,
         created: Timestamp.now(),
       });
@@ -35,11 +37,18 @@ export default function CreateReservation() {
         <input
           onChange={(e) => setTitle(e.target.value)}
           type="text"
+          placeholder="Client"
           className="shadow-md text-xl text-center bg-gray-300"
         />
         <input
           onChange={(e) => setDescription(e.target.value)}
           type="text"
+          placeholder="Coiffure"
+          className="shadow-md text-xl text-center bg-gray-300"
+        />
+        <input
+          onChange={(e) => setDate(e.target.value)}
+          type="date"
           className="shadow-md text-xl text-center bg-gray-300"
         />
         <button className="bg-blue-300 p-3 rounded tracking-wide">
