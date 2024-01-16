@@ -1,7 +1,6 @@
 import { auth, provider } from "../firebase-config";
 import { signInWithPopup } from "firebase/auth";
 import { useNavigate } from "react-router-dom";
-// eslint-disable-next-line react/prop-types
 export default function Login({ setIsAuth }) {
   let navigate = useNavigate();
 

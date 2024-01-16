@@ -1,7 +1,7 @@
 import { onSnapshot } from "firebase/firestore";
 
 export default function Overview() {
-  const [appointments, setAppointments] = useState([]);
+  // const [appointments, setAppointments] = useState([]);
 
   // useEffect(() => {
   //   const unsubscribe = onSnapshot(collection(db, "appointment"), (snapshot) => {
