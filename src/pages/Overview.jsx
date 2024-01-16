@@ -1,5 +1,3 @@
-import { onSnapshot } from "firebase/firestore";
-
 export default function Overview() {
   // const [appointments, setAppointments] = useState([]);
 
