@@ -1,0 +1,6 @@
+get http://localhost:3000/appointments/
+
+# Content-Type: application/json
+# {
+#     "name": "John Doe", 
+# }
