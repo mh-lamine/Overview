@@ -1,6 +1,7 @@
-get http://localhost:3000/appointments/
+get http://localhost:3000/appointments/ 
+Content-Type: application/json
 
-# Content-Type: application/json
-# {
-#     "name": "John Doe", 
-# }
+{
+        "name": "My thrid appointment",
+        "description": "taper fade"
+}
